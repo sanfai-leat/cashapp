@@ -7,6 +7,7 @@
   "drinks": [
     { "name": "birra", "price": 3.00 },
     { "name": "analcolico", "price": 4.00 },
-    { "name": "alcolico", "price": 6.00 }
+    { "name": "alcolico", "price": 6.00 },
+    { "name": "amaro", "price": 1.00 }
   ]
 }

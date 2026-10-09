@@ -19,7 +19,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     padding: 30px;
-    max-width: 600px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -30,8 +30,27 @@ h1 {
     font-size: 28px;
 }
 
+#content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .section {
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section h2 {
@@ -46,21 +65,21 @@ h1 {
 
 .buttons-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: 1fr;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 button {
     padding: 12px;
     border: none;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     background: #667eea;
     color: white;
+    white-space: pre-wrap;
 }
 
 button:hover {
@@ -78,8 +97,8 @@ button:active {
     border: 2px solid #667eea;
     border-radius: 6px;
     padding: 20px;
-    margin-bottom: 20px;
-    min-height: 150px;
+    min-height: 200px;
+    flex: 1;
 }
 
 .order-item {
@@ -97,17 +116,22 @@ button:active {
 .item-name {
     font-weight: 500;
     color: #333;
+    flex: 1;
 }
 
 .item-qty {
     color: #667eea;
     font-weight: 600;
-    margin: 0 15px;
+    margin: 0 10px;
+    text-align: right;
+    min-width: 40px;
 }
 
 .item-total {
     color: #333;
     font-weight: 600;
+    text-align: right;
+    min-width: 70px;
 }
 
 .total-section {
@@ -123,14 +147,13 @@ button:active {
 .input-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    gap: 6px;
 }
 
 label {
     font-size: 14px;
     font-weight: 600;
     color: #555;
-    margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -186,4 +209,15 @@ input:focus {
     color: #667eea;
     font-weight: 600;
     padding: 20px;
+}
+
+/* Responsive: single column on mobile */
+@media (max-width: 768px) {
+    #content {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
