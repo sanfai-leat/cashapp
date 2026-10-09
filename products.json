@@ -1,0 +1,12 @@
+{
+  "foods": [
+    { "name": "pane-salamella", "price": 3.50 },
+    { "name": "patatine", "price": 2.50 },
+    { "name": "castagne", "price": 5.00 }
+  ],
+  "drinks": [
+    { "name": "birra", "price": 3.00 },
+    { "name": "analcolico", "price": 4.00 },
+    { "name": "alcolico", "price": 6.00 }
+  ]
+}
