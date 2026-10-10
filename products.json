@@ -1,13 +1,16 @@
 {
   "foods": [
-    { "name": "pane-salamella", "price": 3.50 },
-    { "name": "patatine", "price": 2.50 },
-    { "name": "castagne", "price": 5.00 }
+    { "name": "salamella", "price": 5.00 },
+    { "name": "patatine", "price": 3.50 },
+    { "name": "castagne", "price": 4.50 }
   ],
   "drinks": [
-    { "name": "birra", "price": 3.00 },
-    { "name": "analcolico", "price": 4.00 },
+    { "name": "spritz", "price": 5.00 },
+    { "name": "birra", "price": 4.00 },
+    { "name": "analcolico", "price": 5.00 },
     { "name": "alcolico", "price": 6.00 },
-    { "name": "amaro", "price": 1.00 }
+    { "name": "amaro", "price": 3.00 },
+    { "name": "prosecco", "price": 2.00 },
+    { "name": "redbull", "price": 3.50 }
   ]
 }
